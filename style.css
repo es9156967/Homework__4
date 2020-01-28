@@ -38,7 +38,7 @@ h1{
 
 #tracker{
     position: relative;
-    margin:15px 10px 15px 10px;
+    margin:10px 10px 15px 10px;
     padding: 0 10px 0 10px;
 }
 
@@ -52,7 +52,7 @@ h1{
     text-align: center;
     color: white;
     padding: 12px;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 48px 10px 48px;
     font-weight: bolder;
     font-size: 20px;
     border: 1.5px solid white;
@@ -154,7 +154,7 @@ footer{
 }
 
 #resultBox{
-
+    display: none;
 }
 
 #result{
@@ -184,7 +184,7 @@ footer{
 }
 
 #quizSet{
-    display: none;
+    display;
 }
 
 
