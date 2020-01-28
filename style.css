@@ -96,6 +96,12 @@ h1{
     cursor: pointer;
 }
 
+
+.button:focus, #submit:focus, #retake:focus{
+    outline: none;
+}
+
+
 #submit {
     position: relative;
     float: right;
@@ -124,9 +130,64 @@ hr{
     background-color: grey;
 }
 
-#resultBox{
-    display:none;
+footer{
+    position: relative;
+    margin-bottom: 30px;
 }
+
+#progress{
+    position: relative;
+    float: left;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+#timer{
+    position: relative;
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+#resultBox{
+
+}
+
+#result{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+#retake {
+    position: relative;
+    display: block;
+    margin: 10px auto 25px auto;
+    background-color: grey;
+    width: 230px;
+    padding: 7px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 1px solid grey;
+    text-align: center;
+    box-shadow: 2px 7px 5px 5px rgba(0, 26, 51, 0.5);
+}
+
+#retake:hover{
+    cursor: pointer;
+    background-color: lightgrey
+}
+
+#quizSet{
+    display: none;
+}
+
+
 
 
 
