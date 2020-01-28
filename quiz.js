@@ -31,7 +31,7 @@ var button4 = $("btn4");
 
 var tracker;
 var countDown;
-var secsInput = 5;
+var secsInput = 15;
 var seconds = secsInput;
 var t;
 
@@ -150,7 +150,7 @@ function startTimer(secs, elem) {
 		}
 		
 		else { //They've selected an option
-			if(questionCount == 9) {
+			if(questionCount == 5) {
 				if(ans === questions[rand].answer) {
 					setCorrect();
 				}
@@ -236,7 +236,7 @@ function nextQuestion() {
 		secs = secsInput; 
 		
 		//if its the last question - load result page 
-		if(questionCount == 9 && questionCount != 10) { 
+		if(questionCount == 4 && questionCount != 5) { 
 			if(ans == questions[rand].answer) {
 				setCorrect();
 			}
