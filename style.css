@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    background-color: grey;
+}
+
+#quiz{
+    background-color: blue;
+    position: relative;
+    height: auto;
+    width: 900px;
+    margin: 30px auto;
+    border-radius: 40px;
+    box-shadow: 5px 7px 5px 5px rgba(0, 26, 51, 0.5);
+    padding: 3px 50px 50px 50px;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 40px;
+    margin: 30px 10px 30px 10px;
+    padding: 5px 0px;
+}
+
+#tracker{
+    position: relative;
+    margin:15px 10px 15px 10px;
+    padding: 0 10px 0 10px;
+}
+
+.nos{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+    border-radius: 50% ;
+    text-align: center;
+    color: white;
+    padding: 12px;
+    margin: 0px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1.5px solid white;
+}
+
+#question {
+    position: relative;
+    color:white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.options{
+    position: relative;
+    width: 550px;
+    margin-top: 15px;
+}
+
+.button{
+    position: relative;
+    background-color: lightgray;
+    width: 250px;
+    height:auto;
+    border: 1.5px solid lightblue;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.button span{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: blue;
+}
+
+.button:hover{
+    background-color: #99ceff;
+    cursor: pointer;
+}
+
+#submit {
+    position: relative;
+    float: right;
+    background-color: lightgray;
+    width: 300px;
+    height: auto;
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 5px 0 25px 10px;
+    border: 1px solid grey;
+    text-align: center;
+    box-shadow: 2px 7px 5px 5px rgba(0, 26, 51, 0.5);
+}
+
+hr{
+    position: relative;
+    clear: both;
+    border: 2px solid lightgreen;
+
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+#resultBox{
+    display:none;
+}
+
+
+
+ 
+
+
