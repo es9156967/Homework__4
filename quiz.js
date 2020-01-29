@@ -47,7 +47,7 @@ function setQuestion(qCount, rand) {
 }
 
 function changeProgressBar(qCount) {
-	progress.innerHTML = "Question " + (qCount+1) + " of 10";
+	progress.innerHTML = "Question " + (qCount+1) + " of 5";
 	tracker = $("no" + (qCount+1));
 	tracker.style.backgroundColor = "#cc7a00";
 }
