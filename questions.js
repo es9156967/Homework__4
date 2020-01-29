@@ -1,18 +1,18 @@
 var questions = [
     {
-        "question": "Web pages are designed using?",
-        "option1" : "HTML",
-        "option2": "CSS",
-        "option3": "Javascript",
-        "option4": "Jquery",
+        "question": "Who is the best laker of all time?",
+        "option1" : "Smush",
+        "option2": "KOBE",
+        "option3": "Lebron",
+        "option4": "Walton",
         "answer": 2
     }, 
     {
-        "question": "Which CSS property changes background color?", 
-        "option1": "colour",
-        "option2": "bgColor",
-        "option3": "color",
-        "option4": "background-color",
+        "question": "What does JS do?", 
+        "option1": "Makes the page look nice",
+        "option2": "Gives the page color",
+        "option3": "Does nothing",
+        "option4": "Dynamically allows the user to interact with the page",
         "answer": 4
     }, 
     {
