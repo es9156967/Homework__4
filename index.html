@@ -1,48 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Quiz App with Timer</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-	</head>
-	
-	<body>
-		<div id="quiz">
-			<header>
-				<h1 id="h1">HTML &amp; CSS Quiz</h1>
-			</header>
-			<div id="tracker">
-				<div class="nos" id="no1">1</div>
-				<div class="nos" id="no2">2</div>
-				<div class="nos" id="no3">3</div>
-				<div class="nos" id="no4">4</div>
-				<div class="nos" id="no5">5</div>
-			</div>
-			<hr style="margin-bottom: 20px;">
-			<div id="quizSet">
-				<p id="question">Question 1 of 5</p>
-				<div id="options" class="options">
-					<button id="btn1" class="button"><span id="option1">Option1</span></button>
-					<button id="btn2" class="button"><span id="option2">Option2</span></button>
-					<button id="btn3" class="button"><span id="option3">Option3</span></button>
-					<button id="btn4" class="button"><span id="option4">Option4</span></button>
-				</div>
-				<button id="submit">Next Question</button>
-			</div>
-			<div id="resultBox">
-				<p id="result">Congrats. You passed. <br/> Your score is 6. </p>
-				<button id="retake">Retake Test</button>
-			</div>
-			<hr style="margin-top: 30px;">
-			
-			<footer>
-				<p id="progress">Question 1 of 5</p>
-				<div id="timer">Timer</div>
-			</footer>
-		</div>
-		<script src="questions.js"></script>
-		<script src="quiz.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Quiz</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/314044026f.js" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <a href="highscore.html" class="button">View Highscores</a>
+
+    </header>
+    <div class="container">
+        <div class="quiz-container ">
+            <ul class="quiz-content">
+                <h1 id = "title" class="">Javascript Quiz</h1>
+                <div class="quiz-answers">
+                    <div class="answer answer1">Answer 1</div>
+                    <div class="answer answer2">Answer 2</div>
+                    <div class="answer answer3">Answer 3</div>
+                    <div class="answer answer4">Answer 4</div>
+                </div>
+            </ul>
+            <div id="quiz-button" class="button">Begin</div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+	<script src="highscore.js"></script>
+</body>
 </html>

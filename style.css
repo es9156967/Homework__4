@@ -1,196 +1,186 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+/*=======================================
+*            global elements            *
+=======================================*/
+
+* { 
     box-sizing: border-box;
-    user-select: none;
 }
 
-p{
-    margin: 10px;
-    padding: 10px;
+body {
+    height: 100vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #BCC4DB;
+    color: #7880B5;
+    overflow: hidden;
 }
 
-html{
-    background-color: grey;
+.button {
+    color: #7880B5;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 1px currentColor solid;
+    transition: all 300ms;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
-#quiz{
-    background-color: blue;
-    position: relative;
-    height: auto;
-    width: 900px;
-    margin: 30px auto;
-    border-radius: 40px;
-    box-shadow: 5px 7px 5px 5px rgba(0, 26, 51, 0.5);
-    padding: 3px 50px 50px 50px;
-}
-
-h1{
-    position: relative;
-    text-align: center;
-    font-size: 60px;
-    background-color: whitesmoke;
-    color: blue;
-    border-radius: 40px;
-    margin: 30px 10px 30px 10px;
-    padding: 5px 0px;
-}
-
-#tracker{
-    position: relative;
-    margin:10px 10px 15px 10px;
-    padding: 0 10px 0 10px;
-}
-
-.nos{
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: darkgray;
-    border-radius: 50% ;
-    text-align: center;
-    color: white;
-    padding: 12px;
-    margin: 0px 48px 10px 48px;
-    font-weight: bolder;
-    font-size: 20px;
-    border: 1.5px solid white;
-}
-
-#question {
-    position: relative;
-    color:white;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 10px;
-}
-
-.options{
-    position: relative;
-    width: 550px;
-    margin-top: 15px;
-}
-
-.button{
-    position: relative;
-    background-color: lightgray;
-    width: 250px;
-    height:auto;
-    border: 1.5px solid lightblue;
-    border-radius: 20px;
-    margin: 10px;
-}
-
-.button span{
-    text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    font-weight: bold;
-    color: blue;
-}
-
-.button:hover{
-    background-color: #99ceff;
+.button:hover {
+    background: #7880B5;
+    color: #BCC4DB;
     cursor: pointer;
 }
 
+/*==============================
+*            header            *
+==============================*/
 
-.button:focus, #submit:focus, #retake:focus{
-    outline: none;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 
-#submit {
+/*=================================
+*            container            *
+=================================*/
+
+.container {
+    height: 100%;
     position: relative;
-    float: right;
-    background-color: lightgray;
-    width: 300px;
-    height: auto;
-    padding: 8px;
-    border-radius: 50px;
-    font-size: 28px;
-    font-weight: bolder;
-    margin: 5px 0 25px 10px;
-    border: 1px solid grey;
-    text-align: center;
-    box-shadow: 2px 7px 5px 5px rgba(0, 26, 51, 0.5);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
-hr{
-    position: relative;
-    clear: both;
-    border: 2px solid lightgreen;
-
+.quiz-container {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-#submit:hover{
-    cursor: pointer;
-    background-color: grey;
+#title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-footer{
-    position: relative;
-    margin-bottom: 30px;
-}
+/*====================================
+*            quiz content            *
+====================================*/
 
-#progress{
-    position: relative;
-    float: left;
-    text-align: right;
-    margin-top: 20px;
-    font-size: 30px;
-    color: white;
-}
-
-#timer{
-    position: relative;
-    float: right;
-    text-align: right;
-    margin-top: 20px;
-    font-size: 30px;
-    color: white;
-}
-
-#resultBox{
+.quiz-answers {
     display: none;
 }
 
-#result{
-    text-align: center;
-    font-size: 40px;
-    color: white;
+.answer {
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 300ms;
+    transform: scaleY(0);
 }
 
-#retake {
-    position: relative;
+.answer:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+}
+
+.answer.correct {
+    background: #b1fab1;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.answer.incorrect {
+    background: rgb(255, 168, 168);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+/*=============================
+*            Input            *
+=============================*/
+
+input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px #7880B5 solid;
+    margin-bottom: 2rem;
+    color: #7880B5;
+    transition: all 300ms;
+}
+
+input:hover {
+    background: #7880B5;
+    color: #eee;
+}
+
+input:focus {
+    outline: none;
+    background: #7880B5;
+    color: #eee;
+}
+
+/*==============================
+*            ACTIVE            *
+==============================*/
+
+.quiz-container.active {
+    top: 5%;
+    background: #eee;
+    padding: 3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    max-width: 70%;
+}
+
+#title.active {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-answers.active {
     display: block;
-    margin: 10px auto 25px auto;
-    background-color: grey;
-    width: 230px;
-    padding: 7px;
-    border-radius: 50px;
-    font-size: 25px;
-    font-weight: bolder;
-    border: 1px solid grey;
-    text-align: center;
-    box-shadow: 2px 7px 5px 5px rgba(0, 26, 51, 0.5);
+    transform: scaleY(1);
 }
 
-#retake:hover{
-    cursor: pointer;
-    background-color: lightgrey
+.answer.active {
+    transform: scaleY(1);
 }
 
-#quizSet{
-    display;
+p.active {
+    font-size: 2rem;
 }
 
+@media (max-width: 630px) {
 
+    body {
+        overflow: visible;
+    }
 
+    header {
+        flex-direction: column;
+    }
 
+    .button{
+        margin-bottom: 1rem
+    }
 
- 
+    .button {
+        padding: .5rem 1rem;
+    }
 
+    #title.active {
+        font-size: 2rem;
+    }
 
+    p.active {
+        font-size: 1.5rem;
+    }
+}
